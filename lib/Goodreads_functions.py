@@ -1,7 +1,7 @@
+
 from bs4 import BeautifulSoup as bs
 import requests
 import urllib.request
-import json
 
 def get_title(soup):
     try:
@@ -146,9 +146,52 @@ def get_description(soup):
         return "No description available"
 
 
-def get_rewards(soup):
-    return
-
 def get_reviews(soup):
     pass
     return
+
+def get_award_urls(url):
+    urls=[]
+    try:
+        open_url = urllib.request.urlopen(url)
+        soup = bs(open_url, 'html.parser')
+        award_elements = soup.find_all('div', class_='category clearFix')
+
+        # Extract URLs from award elements
+        for element in award_elements:
+            link = element.find('a', href=True)
+            if link:
+                urls.append('https://goodreads.com' + link['href'])
+
+    except urllib.error.HTTPError as e:
+        print(f"HTTP Error: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    return urls
+
+def get_book_urls(url):
+    urls = []
+
+    try:
+        open_url = urllib.request.urlopen(url)
+        soup = bs(open_url, 'html.parser')
+        book_links = soup.find_all('a', class_='pollAnswer__bookLink')
+
+        # Extract URLs from book links
+        for link in book_links:
+            urls.append('https://goodreads.com' + link['href'])
+
+    except urllib.error.HTTPError as e:
+        print(f"HTTP Error: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    return urls
+
+def get_book_urls_for_list(list_of_urls):
+    all_urls = []
+    for url in list_of_urls:
+        urls = get_book_urls(url)
+        all_urls.extend(urls)
+    return all_urls
