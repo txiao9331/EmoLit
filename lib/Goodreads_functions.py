@@ -146,10 +146,6 @@ def get_description(soup):
         return "No description available"
 
 
-def get_reviews(soup):
-    pass
-    return
-
 def get_award_urls(url):
     urls=[]
     try:
