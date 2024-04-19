@@ -35,9 +35,12 @@ RENAME TABLE new_book_info TO book_info;
 -- in book_info, check if the book is bestsellers
 DROP VIEW IF EXISTS clean_book_info;
 CREATE VIEW clean_book_info AS
-	SELECT b.*, COUNT(DISTINCT bs.title) AS is_bestseller
+	SELECT b.*,
+		COUNT(DISTINCT bs.title) AS is_bestseller,
+        c.award
 	FROM book_info AS b
 	LEFT JOIN bestsellers AS bs ON b.title = bs.title
+    JOIN choice_award AS c ON b.award_id = c.award_id
 	GROUP BY b.title
 	ORDER BY b.year, b.votes desc;
 
@@ -58,6 +61,9 @@ ADD PRIMARY KEY (title_id);
 ALTER TABLE reviews
 ADD PRIMARY KEY (title_id);
 
+ALTER TABLE choice_award
+ADD PRIMARY KEY (award_id);
+
 ALTER TABLE bestsellers
 ADD FOREIGN KEY (list_id) REFERENCES lists_bestsellers(list_id);
 
@@ -69,5 +75,8 @@ ADD FOREIGN KEY (title_id) REFERENCES books_title(title_id);
 
 ALTER TABLE book_info
 ADD FOREIGN KEY (title_id) REFERENCES reviews(title_id);
+
+ALTER TABLE book_info
+ADD FOREIGN KEY (award_id) REFERENCES choice_award(award_id);
 
 
