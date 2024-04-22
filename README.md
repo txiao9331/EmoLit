@@ -4,11 +4,13 @@
 This repository contains the code and analysis for a data study that explores the relationship between award-winning books and reader stress levels. The study utilizes data from Goodreads Choice Awards from 2019 to 2023, including information on award-winning books and whether they were bestsellers. Additionally, the dataset includes the top ten comments for each book along with conclusions drawn from a trained model indicating whether the text contains stress.
 
 ## Data Sources
-- **Goodreads Choice Awards:** Information on award-winning books from 2019 to 2023, including whether they were bestsellers.
+- **Goodreads Choice Awards:** Information on award-winning books from 2019 to 2023.
 - **Book Comments:** The top ten comments for each book, along with conclusions from a model indicating whether the text contains stress.
+- **NYT BestSellers:** All the bestsellers from NYT books from 2019 to 2023
+- **Stress Analysis in Social Media:** The dataset downloaded from Kaggle, used for model training ([Stress Analysis in Social Media](https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media))
 
 ## Analysis Objective
-The main objective of this analysis is to investigate the relationship between award-winning books and reader stress levels. By examining the comments associated with these books and analyzing whether they contain stress, we aim to understand if there is any correlation between the literary quality of award-winning books and the emotional impact they have on readers.
+The main objective of this analysis is to investigate the relationship between award-winning books and reader stress. By examining the comments associated with these books and analyzing whether they contain stress, we aim to understand if there is any correlation between the literary quality of award-winning books and the emotional impact they have on readers.
 
 ## Data Analysis Steps
 1. **Data Collection:** Web scraping information on award-winning books and reader reviews; gathering the information of bestsellers from NYT by NYT BookAPI.
