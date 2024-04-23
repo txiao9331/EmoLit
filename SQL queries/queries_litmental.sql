@@ -6,7 +6,6 @@ USE littmental;
 CREATE TABLE IF NOT EXISTS clean_bestsellers AS
 	SELECT *, count(*) AS times FROM bestsellers
 	GROUP BY title_id;
-
 DROP TABLE bestsellers;
 RENAME TABLE clean_bestsellers TO bestsellers;
 

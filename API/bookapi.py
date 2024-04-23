@@ -1,5 +1,7 @@
 # http://localhost:8080/bestchoice_doc/
 
+# http://10.10.10.143:5000/bestchoice_doc/
+
 from flask import Flask, abort, request, render_template
 import pymysql
 import os
@@ -270,3 +272,6 @@ def get_last_page(query,page_size):
         last_page = math.ceil(total['total'] / page_size)
     db_conn.close()
     return last_page   
+
+if __name__ == '__main__':
+    app.run(debug=True)

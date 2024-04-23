@@ -70,7 +70,7 @@ paths:
   /v1/awardslist/{year}:
     get:
       tags: 
-        - Search for the list of award
+        - Search for the lists of ChoiceAwards
       summary: Access list of award of one year
       description: Return all the information about list
       parameters:
@@ -102,44 +102,7 @@ paths:
           description: Internal server error
       security:
         - api_auth: []
-  
         
-  /v1/books/{title_id}:
-    get:
-      tags: 
-        - Search for a book
-      summary: Access detailed information for each book, including author, publication details, genre, ratings, award, votes and description
-      description: Return all the information about a game
-      parameters:
-        - name: title_id
-          in: path
-          description: id of the book
-          example: 111
-          required: true
-          schema:
-            type: string
-        - name: include_details
-          in: query
-          example: 0
-          description: Whether or not to display more_info (0 or 1)
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Book'          
-        '404':
-          description: Book not found
-        '401':
-          description: Unauthorized
-        '500':
-          description: Internal server error
-      security:
-        - api_auth: []
-
   /v1/books:
     get:
       tags: 
@@ -188,7 +151,44 @@ paths:
         '500':
           description: Internal server error
       security:
+        - api_auth: []  
+        
+  /v1/books/{title_id}:
+    get:
+      tags: 
+        - Search for a book
+      summary: Access detailed information for each book, including author, publication details, genre, ratings, award, votes and description
+      description: Return all the information about a game
+      parameters:
+        - name: title_id
+          in: path
+          description: id of the book
+          example: 111
+          required: true
+          schema:
+            type: string
+        - name: include_details
+          in: query
+          example: 0
+          description: Whether or not to display more_info (0 or 1)
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'          
+        '404':
+          description: Book not found
+        '401':
+          description: Unauthorized
+        '500':
+          description: Internal server error
+      security:
         - api_auth: []
+
 
 components:
   schemas:
