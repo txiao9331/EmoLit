@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib.pyplot
+seaborn
+bs4
+requests
+os
+json
+sys
+nltk
+sklearn
+joblib
+google.cloud
+wordcloud
+collections
