@@ -21,7 +21,7 @@ The analysis conducted in this study aims to uncover the relationship between aw
 
 3. **Iterative Improvement:** Continuously monitor reader feedback and sentiment to iteratively refine content and marketing strategies. Incorporate feedback loops into the publishing process to adapt to evolving reader preferences and emotional sensitivities.
 
-**Conclusion:** By leveraging insights from this data analysis study, publishers and authors can foster deeper emotional connections with readers and optimize their literary offerings to resonate more profoundly. Ultimately, understanding the interplay between award-winning books and reader stress levels can lead to more impactful storytelling and enhanced reader satisfaction.
+**Conclusion:** By leveraging insights from this data analysis study, publishers and authors can foster deeper emotional connections with readers and optimize their literary offerings to resonate more profoundly. Ultimately, understanding the interplay between award-nominated books and reader stress levels can lead to more impactful storytelling and enhanced reader satisfaction.
 
 ## Data Sources
 - **Goodreads Choice Awards:** Information on award-winning books from 2019 to 2023.
