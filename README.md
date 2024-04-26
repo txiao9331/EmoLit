@@ -1,14 +1,14 @@
 # Investigating the Impact of Award-Winning Books on Reader Stress: A Data Analysis Study
 
 ## Introduction
-This repository contains the code and analysis for a data study exploring the relationship between award-winning books and reader stress levels. The study utilizes data from Goodreads Choice Awards spanning from 2019 to 2023, encompassing information on award-winning books and their status as bestsellers. Additionally, the dataset includes the top ten comments for each book, along with conclusions drawn from a trained model indicating whether the text contains stress.
+This repository contains the code and analysis for a data study exploring the relationship between award-nominated books and reader stress levels. The study utilizes data from Goodreads Choice Awards spanning from 2019 to 2023, encompassing information on award-winning books and their status as bestsellers. Additionally, the dataset includes the top ten comments for each book, along with conclusions drawn from a trained model indicating whether the text contains stress.
 
 ## Business Case
 **Overview:**
-The analysis conducted in this study aims to uncover the relationship between award-winning books and reader stress levels. By delving into the emotional impact of literature, publishers and authors can gain valuable insights to refine their strategies and enhance reader engagement.
+The analysis conducted in this study aims to uncover the relationship between award-nominated books and reader stress levels. By delving into the emotional impact of literature, publishers and authors can gain valuable insights to refine their strategies and enhance reader engagement.
 
 **Key Insights:**
-1. **Understanding Reader Sentiment:** By analyzing reader comments and stress levels associated with award-winning books, publishers and authors can better understand how readers perceive and emotionally connect with their works.
+1. **Understanding Reader Sentiment:** By analyzing reader comments and stress levels associated with award-nominated books, publishers and authors can better understand how readers perceive and emotionally connect with their works.
   
 2. **Refining Content Strategy:** Insights derived from the analysis can guide publishers and authors in refining their content strategy. Understanding which elements of literature evoke stress or emotional engagement can help in crafting more resonant narratives.
 
