@@ -36,10 +36,10 @@ The main objective of this analysis is to investigate the relationship between a
 1. **Data Collection:** Web scraping information on award-winning books and reader reviews; gathering the information of bestsellers from NYT by NYT BookAPI.
 2. **Data Preprocessing:** Cleaning and preparing the data for analysis.
 3. **Exploratory Data Analysis:** Examining trends and patterns in the data, including the distribution of stress levels among award-winning books.
-4. **Statistical Analysis:** Conducting statistical tests to determine the relationship between award-winning books and reader stress levels.
+4. **Statistical Analysis:** Conducting statistical tests to determine the relationship between award-nominated books and reader stress levels.
 5. **Visualization:** Creating visual representations of the data to aid in interpretation and communication of results.
 
 ## Conclusion
-Through this data analysis study, we aim to gain insights into the impact of award-winning books on reader stress levels. By understanding how literary quality correlates with emotional response, we can provide valuable insights for publishers, authors, and readers alike.
+Through this data analysis study, we aim to gain insights into the impact of award-nominated books on reader stress levels. By understanding how literary quality correlates with emotional response, we can provide valuable insights for publishers, authors, and readers alike.
 
 
