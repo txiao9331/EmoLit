@@ -1,4 +1,5 @@
 # Investigating the Impact of Award-Winning Books on Reader Stress: A Data Analysis Study
+![Title](img/1.png)
 
 ## Introduction
 This repository contains the code and analysis for a data study exploring the relationship between award-nominated books and reader stress levels. The study utilizes data from Goodreads Choice Awards spanning from 2019 to 2023, encompassing information on award-winning books and their status as bestsellers. Additionally, the dataset includes the top ten comments for each book, along with conclusions drawn from a trained model indicating whether the text contains stress.
@@ -33,6 +34,7 @@ The analysis conducted in this study aims to uncover the relationship between aw
 The main objective of this analysis is to investigate the relationship between award-nominated books and reader stress levels. By examining the comments associated with these books and analyzing whether they contain stress, we aim to understand if there is any correlation between the literary quality of award-winning books and the emotional impact they have on readers.
 
 ## Data Analysis Steps
+![Panning](img/2.png)
 1. **Data Collection:** Web scraping information on award-winning books and reader reviews; gathering the information of bestsellers from NYT by NYT BookAPI.
 2. **Data Preprocessing:** Cleaning and preparing the data for analysis.
 3. **Exploratory Data Analysis:** Examining trends and patterns in the data, including the distribution of stress levels among award-winning books.
@@ -42,4 +44,4 @@ The main objective of this analysis is to investigate the relationship between a
 ## Conclusion
 Through this data analysis study, we aim to gain insights into the impact of award-nominated books on reader stress levels. By understanding how literary quality correlates with emotional response, we can provide valuable insights for publishers, authors, and readers alike.
 
-
+![Thank you](img/3.png)
