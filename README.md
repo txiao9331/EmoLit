@@ -30,7 +30,7 @@ The analysis conducted in this study aims to uncover the relationship between aw
 - **Stress Analysis in Social Media:** The dataset downloaded from Kaggle, used for model training ([Stress Analysis in Social Media](https://www.kaggle.com/datasets/ruchi798/stress-analysis-in-social-media))
 
 ## Analysis Objective
-The main objective of this analysis is to investigate the relationship between award-winning books and reader stress levels. By examining the comments associated with these books and analyzing whether they contain stress, we aim to understand if there is any correlation between the literary quality of award-winning books and the emotional impact they have on readers.
+The main objective of this analysis is to investigate the relationship between award-nominated books and reader stress levels. By examining the comments associated with these books and analyzing whether they contain stress, we aim to understand if there is any correlation between the literary quality of award-winning books and the emotional impact they have on readers.
 
 ## Data Analysis Steps
 1. **Data Collection:** Web scraping information on award-winning books and reader reviews; gathering the information of bestsellers from NYT by NYT BookAPI.
